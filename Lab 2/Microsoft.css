@@ -1,0 +1,179 @@
+.bar
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+        #button
+{
+    cursor: pointer;
+    border: none;
+    width: 175px;
+    height: 53.5px;
+    background-color: #fff;
+}
+        .baricon
+{
+    position: relative;
+    text-align: right;
+    right: 100px;
+    bottom: 30px;
+}
+        #bg
+{
+    text-align: center;
+}
+        .span
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+    bottom: 400px;
+    padding-left: 180px;
+}
+        #deviz
+{
+    font-size: 37px;
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+}
+        #w11
+{
+    font-size: 16px;
+}
+        #button2
+{
+    cursor: pointer;
+    border: none;
+    width: 241.36px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #0067B8;
+    color: #ffff;
+    font-weight: 405;
+    position: relative;
+    top: 20px;
+}
+        .abar
+{
+    text-decoration: none;
+    height: 48px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262626;
+    position: relative;
+    left: 105px;
+}
+        #logo
+{
+    position: relative;
+    left: 80px;
+    top: 8px;
+}
+        .search
+{
+    position: relative;
+    top: 7px;
+}
+        .aicon
+{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #262626;
+}
+        .h2
+{
+    font-size: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 530;
+    color: #000000;
+}
+        .span2
+{
+    font-size: 16px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+        .other
+{
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+        .img1
+{
+    width: 345px;
+    height: 194px;
+}
+        #s1
+{
+    position: relative;
+    right: 260px;
+}
+        #s2
+{
+    position: relative;
+    right: 90px;
+}
+        #s3
+{
+    position: relative;
+    left: 15px;
+}
+        #s4
+{
+    position: relative;
+    left: 256px;
+}
+        #ss
+{
+    text-align: left;
+    position: relative;
+    left: 210px;
+    bottom: 22px;
+}
+        #sp2
+{
+    position: relative;
+    left: 360px;
+    bottom: 56px;
+}
+        #sp3
+{
+    position: relative;
+    left: 720px;
+    bottom: 111px;
+}
+        #sp4
+{
+    position: relative;
+    left: 1080px;
+    bottom: 130px;
+}
+        .name
+{
+    text-align: center;
+}
+
+        .link
+{
+    text-decoration: none;
+    color: #0067B8;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    position: relative;
+    bottom: 50px;
+}
+        #more
+{
+    position: relative;
+    bottom: 110px;
+}
+        #hr
+{
+    position: relative;
+    bottom: 110px;
+    width: 99%;
+}
