@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo List</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+    #todoInput {
+        width: calc(100% - 80px);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    button {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    .todo-item {
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .todo-item input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    .done {
+        text-decoration: line-through;
+        color: #999;
+    }
+    .delete-btn {
+        background-color: #f44336;
+    }
+    .delete-btn:hover {
+        background-color: #cc0000;
+    }
+</style>
+</head>
+<body>
+    <center><div style="width: 600px; text-align: center;">
+    <h1>Todo List</h1>
+    <input type="text" id="todoInput" placeholder="Add new item">
+    <button onclick="addItem()">Add</button>
+    <div id="todoList"></div>
+
+    <script>
+        let todoList = [];
+
+        function addItem() {
+            const input = document.getElementById("todoInput");
+            const value = input.value.trim();
+            if (value !== "") {
+                todoList.push({ text: value, done: false });
+                input.value = "";
+                renderList();
+            }
+        }
+
+        function toggleDone(index) {
+            todoList[index].done = !todoList[index].done;
+            renderList();
+        }
+
+        function deleteItem(index) {
+            todoList.splice(index, 1);
+            renderList();
+        }
+
+        function renderList() {
+            const listContainer = document.getElementById("todoList");
+            listContainer.innerHTML = "";
+            todoList.forEach((item, index) => {
+                const listItem = document.createElement("div");
+                listItem.classList.add("todo-item");
+                if (item.done) {
+                    listItem.classList.add("done");
+                }
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.checked = item.done;
+                checkbox.addEventListener("change", () => toggleDone(index));
+                const text = document.createTextNode(item.text);
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+                deleteButton.classList.add("delete-btn");
+                deleteButton.addEventListener("click", () => deleteItem(index));
+                listItem.appendChild(checkbox);
+                listItem.appendChild(text);
+                listItem.appendChild(deleteButton);
+                listContainer.appendChild(listItem);
+            });
+        }
+    </script>
+    </div></center>
+</body>
+</html>
