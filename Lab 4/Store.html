@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="Store.css">
+  
+    <link rel="stylesheet" href="xiaomi.js">
+</head>
+<body>
+<div id="maindiv">
+
+        <div id="store">
+            <span id="mystore">My Store</span> 
+        </div>
+        
+        <div id="checkoutx">
+            <button id="button1">
+            <img id="check" src="img/checkout.svg" alt="">
+            <span id="checkout">Checkout</span>
+            </button>
+        </div>
+    
+
+        <div id="productdiv">
+            <span id="products">Products</span>
+        </div>
+        <div>
+            <div class="items">
+                <div id="xiaomi">
+    
+                    <button class="heading" style="border: none; background-color: #FFFF; cursor:pointer" onclick="toggleXiaomi()">Xiaomi Redmi 12 4G 8GB/256GB</button>
+    
+                    <div id="text">
+                        <p>Description: <br>
+                            NFC technology: No <br>
+                            Color: Black <br>
+                            Screen type: IPS, touch <br>
+                            diagonal: 6.79 inch <br>
+                            RAM size: 8 GB <br>
+                            Processor: 8-core MediaTek Helio G88 <br>
+                            Internal memory: 256.0 GB <br>
+                            Battery capacity: 5000.0 match</p>
+                        <p>Rating: 4.5</p>
+                        <p>Price: 73 109 ₸</p>
+                        <a href="https://kaspi.kz/shop/p/xiaomi-redmi-12-4g-8-gb-256-gb-chernyi-110918152/?c=750000000"><button class="button">Share</button></a>
+                    </div>
+    
+                    <div class="all">
+                        <input checked type="radio" name="respond" id="desktop">
+                        <article id="slider">
+                                <input checked type="radio" name="slider" id="switch1">
+                                <input type="radio" name="slider" id="switch2">
+                                <input type="radio" name="slider" id="switch3">
+                                <input type="radio" name="slider" id="switch4">
+                                <input type="radio" name="slider" id="switch5">
+                            <div id="slides">
+                                <div id="overflow">
+                                    <div class="image">
+                                        <article><img style="width: 150px; height: 300px;"; src="img/Xiaomi.jpeg"></img></article>
+                                        <article><img style="width: 30px; height: 300px;";  src="img/Xiaomi1.jpeg"></img></article>
+                                        <article><img style="width: 150px; height: 300px;"; src="img/Xiaomi2.jpeg"></img></article>
+                                        <article><img style="width: 100px; height: 300px;"; src="img/Xiaomi3.jpg"></img></article>
+                                        <article><img style="width: 100px; height: 300px;"; src="img/Xiaomi4.jpg"></img></article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="controls">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                                <label for="switch3"></label>
+                                <label for="switch4"></label>
+                                <label for="switch5"></label>
+                            </div>
+                            <div id="active">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                                <label for="switch3"></label>
+                                <label for="switch4"></label>
+                                <label for="switch5"></label>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <script src="xiaomi.js"></script>
+            <script>
+                
+                function toggleXiaomi() {
+                    var xiaomiButton = document.querySelector('#xiaomi button.heading');
+                    xiaomiButton.classList.toggle('active');
+                }
+            </script>
+        </div>
+<script src="iphone.js"></script>
+</body>
+</html>
